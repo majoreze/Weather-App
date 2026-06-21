@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+header {
+    background-color: #1A3C5E;
+    padding: 20px;
+}
+
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 935px;
+    margin: 0px auto;
+}
+
+#searchBtn:hover {
+    background: #256d8c;
+}
+
+#searchBtn {
+    background: #2E86AB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.navbar {
+    background: #1A3C5E;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 0px
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+header h1 {
+    color: white;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 16px;
+    transition: all 0.25 ease;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #2E86AB
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.hero {
+    background: #2E86AB;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    max-width: 900px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.weather-icon {
+    font-size: 60px;
+    animation: bounce 2s infinite;
+}
+
+.stats {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 15px;
+}
+
+.stat-card {
+    flex: 1;
+    background: white;
+    padding: 0px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.forecast-section {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.forecast-title {
+    color: #888;          
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.forecast-wrapper {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.forecast-section h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.forecast-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #d9f1ff;  
+    padding: 12px 16px;
+    border-radius: 12px;
+
+    margin-bottom: 10px;
+    width: 100%;
+
+    transition: all 0.2s ease;
+}
+
+.forecast-items:hover {
+    background: #f0f8ff;
+}
+
+#forecastContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+#historyContainer {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.history-btn {
+  margin: 5px;
+  color: white
+}
+
+#errorMessage {
+    color: red;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#loadingMessage {
+    text-align: center;
+    font-weight: bold;
+    color: #1A3C5E;
+}
+
+@keyframes bounce {
+    0%, 100% { transform:matrix(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@media screen and (max-width: 480px) {
+    .search-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cityInput,
+    #searchBtn {
+        width: 90%;
+    }
+}
+
+#cityInput {
+    flex: 1;
+    min-width: 0;         
+    padding: 14px 18px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    background: white;
+    font-size: 16px;
+    outline: none;
+}
+
+@media screen and (max-width: 480px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+    
+    .forecast-items {
+        flex-direction: column;
+       text-align: center;
+        gap: 10px;
+    }
+}
+
+.grid-day {
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.grid-icon {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.grid-temp {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}

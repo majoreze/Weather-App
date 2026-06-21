@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+                <div class="nav-container">
+                    <h1>Weather App</h1>
+    
+    </header>
+
+                    <section class="search-section">
+                        <input type="text" id="cityInput" 
+                        placeholder="Search city...">
+                        <button id="searchBtn">Search</button>
+                     </section>
+                 </div>
+
+        <div id="historyContainer"></div>
+
+
+    <main>
+        <section class="hero" id="heroSection">
+            <div class="weather-icon" id="weatherIcon">☀️</div>
+            <h2 id="cityName">Search for a city</h2>
+            <p id="temperature">--°C</p>
+            <p id="description">Weather description</p>
+
+            <button id="unitToggle">Switch to °F</button>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h3>Humidity</h3>
+                <p id="humidity">--%</p>
+            </div>
+            <div class="stat-card">
+                <h3>Wind Speed</h3>
+                <p id="windSpeed">-- km/h</p>
+            </div>
+            <div class="stat-card">
+                <h3>UV Index</h3>
+                <p id="uvIndex">N/A</p>
+            </div>
+        </section>
+
+           
+      <div class="forecast-wrapper">
+
+    <h2 class="forecast-title">5-DAY FORECAST</h2>
+
+    <section class="forecast-section">
+        <div id="forecastContainer"></div>
+    </section>
+
+</div>
+
+        <section>
+            <p id="loadingMessage"></p>
+            <p id="errorMessage"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
