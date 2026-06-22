@@ -32,35 +32,12 @@ body {
     transition: all 0.2s ease;
 }
 
-.navbar {
-    background: #1A3C5E;
-    color: white;
-    padding: 20px 0;
-}
-
-.navbar h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
 .nav-content {
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
     font-size: 24px;
     font-weight: bold;
-}
-
-.nav-container {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-}
-
-header h1 {
-    color: white;
 }
 
 .search-box {
@@ -242,52 +219,10 @@ button:hover {
     }
     
 
-@media (max-width: 480px) {
-  .stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    width: 100%;
-  }
-
-  .stat-card {
-    padding: 8px 4px;
-    text-align: center;
-    border-radius: 0;
-    background: transparent;
-    box-shadow: none;
-  }
-
-  .stat-card h3 {
-    font-size: 13px;
-    margin-bottom: 4px;
-  }
-
-  .stat-card p,
-  .stat-card .value {
-    font-size: 15px;
-    font-weight: bold;
-  }
-
-  .search-section {
-    flex-direction: row;
-  }
-
-  #searchBtn {
-    width: auto;
-    flex-shrink: 0;
-  }
-
   #cityInput {
     flex: 1;
     min-width: 0;
   }
-
-  #searchBtn {
-    width: auto;
-    flex-shrink: 0;
-  }
-}
 
 @media (max-width: 480px) {
   .stats {
@@ -329,15 +264,6 @@ button:hover {
   padding: 20px 0;
   width: 100%;
   text-align: left;
-}
-
-.nav-content {
-  width: 90%;
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: left;
-  font-size: 24px;
-  font-weight: bold;
 }
 
 @media (max-width: 480px) {
