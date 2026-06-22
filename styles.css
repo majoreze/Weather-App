@@ -10,10 +10,6 @@ body {
     color: #222;
 }
 
-header {
-    background-color: #1A3C5E;
-    padding: 20px;
-}
 
 .search-section {
     display: flex;
