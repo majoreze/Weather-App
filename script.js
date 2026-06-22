@@ -99,7 +99,7 @@ function displayForecast(daily) {
     forecastContainer.innerHTML += `
         <div class="grid-day">${dayName}</div>
         <div class="grid-icon">${icon}</div>
-        <div class="grid-temp">${daily.temperature_2m_max[i]}° </br>${daily.temperature_2m_min[i]}°</div>
+        <div class="grid-temp">${daily.temperature_2m_max[i]}° <br>${daily.temperature_2m_min[i]}°</div>
     `;
   }
 }
@@ -147,7 +147,7 @@ function getUVLevel(uv) {
   if (uv <= 2) return "Low";
   if (uv <= 5) return "Moderate";
   if (uv <= 7) return "High";
-  return "High";
+  return "Very High";
 }
 
 
@@ -185,7 +185,10 @@ async function handleSearch() {
 }
 
     //Toggle between Celsius and Fahrenheit
-    document.getElementById("unitToggle").addEventListener("click", () => {
+    const unitToggle = document.getElementById("unitToggle");
+
+    if (unitToggle) {
+    unitToggle.addEventListener("click", () => {
         const tempElement = document.getElementById("temperature");
 
         if (isCelsius) {
@@ -200,6 +203,7 @@ async function handleSearch() {
 
         isCelsius = !isCelsius;
     });
+}
 
     searchBtn.addEventListener('click', handleSearch);
 

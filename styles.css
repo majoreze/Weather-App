@@ -19,11 +19,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
-    padding: 20px;
-    width: 90%;
-    max-width: 935px;
-    margin: 0px auto;
+    gap: 12px;
+    margin: 15px 0;
 }
 
 #searchBtn:hover {
@@ -42,9 +39,9 @@ header {
 .navbar {
     background: #1A3C5E;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
-    margin: 0px
+    width: 100%
 }
 
 .navbar h1 {
@@ -88,6 +85,12 @@ button:hover {
     transform: scale(1.05);
 }
 
+.app-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .hero {
     background: #2E86AB;
     color: white;
@@ -104,10 +107,10 @@ button:hover {
 }
 
 .stats {
-    max-width: 900px;
-    margin: 0 auto;
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 15px 0;
 }
 
 .stat-card {
@@ -200,15 +203,16 @@ button:hover {
     50% { transform: translateY(-10px); }
 }
 
-@media screen and (max-width: 480px) {
-    .search-section {
+@media (max-width: 480px) {
+    .search-section,
+    .stats {
         flex-direction: column;
-        align-items: center;
     }
 
     #cityInput,
-    #searchBtn {
-        width: 90%;
+    #searchBtn,
+    .stat-card {
+        width: 100%;
     }
 }
 
