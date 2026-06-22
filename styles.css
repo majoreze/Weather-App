@@ -233,21 +233,6 @@ button:hover {
     50% { transform: translateY(-10px); }
 }
 
-
-
-@media (max-width: 480px) {
-    .search-section,
-    .stats {
-        flex-direction: column;
-    }
-
-    #cityInput,
-    #searchBtn,
-    .stat-card {
-        width: 100%;
-    }
-}
-
 @media screen and (max-width: 480px) {
     .nav-container {
         flex-direction: column;
@@ -266,26 +251,43 @@ button:hover {
 }
 
 @media (max-width: 480px) {
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    width: 100%;
+  }
 
-    .stats {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        align-items: stretch;
-    }
+  .stat-card {
+    padding: 8px 4px;
+    text-align: center;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
 
-    .stat-card {
-        width: 100%;
-        text-align: left;
-    }
+  .stat-card h3 {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
 
-    .stat-card h3 {
-        font-size: 14px;
-        margin-bottom: 4px;
-    }
+  .stat-card p,
+  .stat-card .value {
+    font-size: 15px;
+    font-weight: bold;
+  }
 
-    .stat-card p {
-        font-size: 18px;
-    }
+  .search-section {
+    flex-direction: row;
+  }
+
+  #cityInput {
+    flex: 1;
+    min-width: 0;
+  }
+
+  #searchBtn {
+    width: auto;
+    flex-shrink: 0;
+  }
 }
-
