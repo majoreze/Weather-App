@@ -198,6 +198,36 @@ button:hover {
     color: #1A3C5E;
 }
 
+.grid-day {
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.grid-icon {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.grid-temp {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+
+#cityInput {
+    flex: 1;
+    min-width: 0;         
+    padding: 14px 18px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    background: white;
+    font-size: 16px;
+    outline: none;
+}
+
 @keyframes bounce {
     0%, 100% { transform:matrix(0); }
     50% { transform: translateY(-10px); }
@@ -216,17 +246,6 @@ button:hover {
     .stat-card {
         width: 100%;
     }
-}
-
-#cityInput {
-    flex: 1;
-    min-width: 0;         
-    padding: 14px 18px;
-    border: 2px solid #ccc;
-    border-radius: 25px;
-    background: white;
-    font-size: 16px;
-    outline: none;
 }
 
 @media screen and (max-width: 480px) {
@@ -270,20 +289,3 @@ button:hover {
     }
 }
 
-.grid-day {
-  padding: 10px;
-  font-weight: bold;
-  border-bottom: 1px solid #ddd;
-}
-
-.grid-icon {
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-}
-
-.grid-temp {
-  padding: 15px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-}
