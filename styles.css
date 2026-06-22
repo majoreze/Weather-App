@@ -232,23 +232,13 @@ button:hover {
     0%, 100% { transform:matrix(0); }
     50% { transform: translateY(-10px); }
 }
-
-@media screen and (max-width: 480px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .stats {
-        flex-direction: column;
-    }
     
     .forecast-items {
         flex-direction: column;
        text-align: center;
         gap: 10px;
     }
-}
+    
 
 @media (max-width: 480px) {
   .stats {
@@ -279,6 +269,11 @@ button:hover {
 
   .search-section {
     flex-direction: row;
+  }
+
+  #searchBtn {
+    width: auto;
+    flex-shrink: 0;
   }
 
   #cityInput {
